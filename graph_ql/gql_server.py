@@ -57,12 +57,10 @@ class Mutations(ObjectType):
     delete_estudiante = DeleteEstudiante.Field()
 
 estudiantes = [
-    Estudiante(
-        id=1, nombre="Pedrito", apellido="García", carrera="Ingeniería de Sistemas"
-    ),
-    Estudiante(id=2, nombre="Jose", apellido="Lopez", carrera="Arquitectura"),
+    Estudiante(id=1, nombre="Pedrito", apellido="García", carrera="Ingeniería de Sistemas",),
+    Estudiante(id=2, nombre="Jose", apellido="Lopez", carrera="Arquitectura",),
+    Estudiante(id=3, nombre="Carlos", apellido="Mamani", carrera="Arquitectura",)
 ]
-
 schema = Schema(query=Query, mutation=Mutations)
 
 

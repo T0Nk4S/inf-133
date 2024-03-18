@@ -21,7 +21,7 @@ print(response.text)
 query = """
     {
         estudiantePorId(id: 2){
-            nombre
+            carrera
         }
     }
 """
